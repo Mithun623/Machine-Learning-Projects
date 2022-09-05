@@ -1,0 +1,77 @@
+<div class="cta">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="cta_container d-flex-lg-row flex-columnalign-items-lg-center align-items-start justify">
+
+
+                    <center>
+                        <form action="{{url_for('predict')}}" method="post">
+
+                            <h1>ENTER THE DETAILS</h1>
+
+                            <label for="work">GENDER:</label>
+                            <select name="work" id="work"><br>
+                                <option value="0">FeMale</option>
+                                <option value="1">Male</option>
+                            </select><br>
+                            
+                            <input class="age" type="number" name="age" placeholder="AGE" required="">
+
+                            
+
+                            <label>Hyper tension</label>
+                            <select name="tum" id="tum">
+                                <option value="0">NO</option>
+                                <option value="1">YES</option>
+                            </select><br>
+
+                            <labe>heart disease</labe>
+                            <select name="in" id="in">
+                                <option value="0">NO</option>
+                                <option value="1">YES</option>
+                            </select><br>
+
+                            <label>ever married</label>
+                            <select name="in" id="in">
+                                <option value="0">NO</option>
+                                <option value="1">YES</option>
+                            </select><br>
+
+                            <label for="ever">WORK TYPE:</label>
+                            <select name="ever" id="ever">
+                                <option value="0">Government job</option>
+                                <option value="1">Never worked</option>
+                                <option value="2">private job</option>
+                                <option value="3">self employed</option>
+                                <option value="4">Children</option>
+                            </select><br>
+
+                            <label for="ever">RESIDENCE TYPE:</label>
+                            <select name="ever" id="ever">
+                                <option value="0">Rural</option>
+                                <option value="1">Urban</option>
+                            </select><br>
+
+
+                            <input class="avg glucose level" type="number" name="avg glucose level"
+                                placeholder="AVG GLUCOSE LEVEL" required=""><br>
+
+                            <input class="bmi" type="number" name="bmi" placeholder="BMI" required=""><br>
+
+                            <label for="ever">SMOKING STATUS:</label>
+                            <select name="ever" id="ever">
+                                <option value="0">unknown</option>
+                                <option value="1">formely smoked</option>
+                                <option value="2">never smoked</option>
+                                <option value="3">smoked</option>
+                            </select><br>
+
+                            <button value="UPLOAD">submit</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

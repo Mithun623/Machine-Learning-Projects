@@ -1,0 +1,82 @@
+<div class="cta">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="cta_container d-flex-lg-row flex-columnalign-items-lg-center align-items-start justify">
+
+
+                    <center>
+                        <form action="{{url_for('predict')}}" method="post">
+
+                            <h1>ENTER THE DETAILS</h1>
+
+                            <!-- <input class="age" type="number" name="age" placeholder="AGE" required=""> -->
+                            <select name="num" id="num">
+                            <option value="0">30-39</option>
+                            <option value="1">40-49</option>
+                            <option value="2">50-59</option>
+                            <option value="3">60-69</option>
+                            <option value="4">70-79</option></select><br>
+
+                            <label for="work">MENOPAUSE:</label>
+                            <select name="work" id="work"><br>
+        <option value="0">ge40</option>
+        <option value="1">it40</option>
+        <option value="2">premeno</option></select><br>
+
+                            <!-- <input class="tumor-size" type="number" name="tumor-size" placeholder="TUMOR-SIZE" required=""> -->
+                            <select name="tum" id="tum">
+                            <option value="0">0-4</option>
+                            <option value="1">15-19</option>
+                            <option value="2">20-24</option>
+                            <option value="3">25-29</option>
+                            <option value="4">30-34</option>
+                            <option value="5">35-39</option>
+                            <option value="6">40-44</option>
+                            <option value="7">45-49</option>
+                            <option value="8">50-54</option>
+                            <option value="9">55-60</option></select><br>
+
+                            <!-- <input class="inv-nodes" type="number" name="inv-nodes" placeholder="INV-NODES" required=""> -->
+                            <select name="in" id="in">
+                            <option value="0">0-2</option>
+                            <option value="1">3-5</option>
+                            <option value="2">6-8</option>
+                            <option value="3">9-11</option>
+                            <option value="4">12-14</option>
+                            <option value="5">15-17</option></select><br>
+
+                            <label for="ever">NODE-CAPS:</label>
+                            <select name="ever" id="ever">
+        <option value="0">no</option>
+        <option value="1">yes</option></select><br>
+
+                            <input class="deg-malig" type="number" name="deg-malig" placeholder="DEG-MALIG" required=""><br>
+
+                            <label for="ever">BREAST:</label>
+                            <select name="ever" id="ever">
+        <option value="0">left</option>
+        <option value="1">right</option></select><br>
+
+                            <label for="ever">BREAST-QUAD:</label>
+                            <select name="ever" id="ever">
+                                <option value="0">central</option>
+                                <option value="1">left_low</option>
+                                <option value="2">left_up</option>
+                                <option value="3">right_low</option>
+                                <option value="4">right_up</option></select><br>
+
+
+                            <label for="ever">IRRADIAT:</label>
+                            <select name="ever" id="ever">
+        <option value="0">no</option>
+        <option value="1">yes</option></select><br>
+
+                            <button value="UPLOAD">submit</button>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
